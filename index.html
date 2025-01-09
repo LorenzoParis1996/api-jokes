@@ -10,9 +10,9 @@
     <div id="app">
         <div class="container">
             <h3>Random jokes</h3>
-            <h4>Jokes you can tell when you don't want to impress</h4>
-            <p v-if="joke.setup">{{joke.setup}}</p>
-            <p v-if="joke.punchline">{{joke.punchline}}</p>
+            <h4 class="text-center">Jokes you can tell when you don't want to impress</h4>
+            <p v-if="joke.setup" class="text-center">{{joke.setup}}</p>
+            <p v-if="joke.punchline" class="text-center">{{joke.punchline}}</p>
             <button @click="getJoke">Another one</button>
         </div>
     </div>
