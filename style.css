@@ -40,7 +40,7 @@ button:hover {
 }
 
 
-@media (max-width: 300px) {
+@media (max-width: 600px) {
     .container {
         padding: 10px; 
         height: auto;
