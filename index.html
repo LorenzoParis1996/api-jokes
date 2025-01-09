@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Random jokes</title>
+</head>
+<body>
+    <div id="app">
+        <div class="container">
+            <h3>Random jokes</h3>
+            <h4>Jokes you can tell when you don't want to impress</h4>
+            <p v-if="joke.setup">{{joke.setup}}</p>
+            <p v-if="joke.punchline">{{joke.punchline}}</p>
+            <button @click="getJoke">Another one</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
